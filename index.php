@@ -1,6 +1,6 @@
 <html>
  <head>
-  <title>Hello OpenShift</title>
+  <title>Michael Epley's OpenShift Application</title>
   <style>
     table, th, td {
       border: 1px solid black;
@@ -51,7 +51,7 @@ if ($conn) {
   $sql = "SELECT id, containerip, visitstamp FROM visitors";
   $result = mysqli_query($conn, $sql);
   if (mysqli_num_rows($result) > 0) {
-    echo "<table><tr><th>Id</th><th>Container</th><th>Timestamp</th></tr>";
+    echo "<table bgcolor='#00FF00'><tr><th>Id</th><th>Container</th><th>Timestamp</th></tr>";
     while($row = mysqli_fetch_assoc($result)) {
         echo "<tr><td>" . $row["id"] . "</td><td>" . $row["containerip"] . "</td><td>" . $row["visitstamp"] . "</td></tr>";
     }
