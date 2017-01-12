@@ -1,6 +1,6 @@
 <html>
  <head>
-  <title>Hello OpenShift</title>
+  <title>Hello Mepley! OpenShift</title>
   <style>
     table, th, td {
       border: 1px solid black;
