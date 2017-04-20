@@ -1,6 +1,6 @@
 <html>
  <head>
-  <title>Hello Mepley! OpenShift</title>
+  <title>Hello Michael!</title>
   <style>
     table, th, td {
       border: 1px solid black;
@@ -11,10 +11,20 @@
       text-align: left;
     }
   </style>
- </head>
- <body>
- <h1>Hello OpenShift!</h1>
+</head>
+<body>
+<!-- See https://github.com/blog/273-github-ribbons -->
+<a href="https://github.com/michaelepley/phpmysqldemo"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/121cd7cbdc3e4855075ea8b558508b91ac463ac2/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_green_007200.png"></a>
+<div align="center" width="80%">
+<h1>Openshift PHP+MySQL </h1>
 <?php
+// <!-- Automatically refresh page every few seconds, if the refresh request parameter is provided -->  
+if (isset($_GET["refresh"])) {
+	$refresh=$_GET["refresh"]; 
+	$url=$_SERVER['REQUEST_URI'];
+	header("Refresh: $refresh; URL=$url");
+}
+
 error_reporting(E_ERROR);
 
 $host = getenv("MYSQL_SERVICE_HOST");
@@ -23,7 +33,7 @@ $database = getenv("MYSQL_SERVICE_DATABASE");
 $username = getenv("MYSQL_SERVICE_USERNAME");
 $password = getenv("MYSQL_SERVICE_PASSWORD");
 
-$conn = mysqli_connect($host, $username, $password, $database, $port);
+$conn = mysqli_connect($host, $username, $password, $database, $porgitt);
 if ($conn) {
   echo "Database is available <br/>";
   $sql = "CREATE TABLE visitors (
@@ -65,5 +75,6 @@ if ($conn) {
   echo "Database is not available";
 }
 ?>
+</div>
  </body>
 </html>
