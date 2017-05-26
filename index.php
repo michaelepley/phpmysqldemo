@@ -1,6 +1,6 @@
 <html>
  <head>
-  <title>Hello Jamie Jones</title>
+  <title>Hello Michael!</title>
   <style>
     table, th, td {
       border: 1px solid black;
@@ -35,7 +35,6 @@ $password = getenv("MYSQL_SERVICE_PASSWORD");
 
 $conn = mysqli_connect($host, $username, $password, $database, $porgitt);
 if ($conn) {
-	echo "Hello Jamie";
   echo "Database is available <br/>";
   $sql = "CREATE TABLE visitors (
           id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
