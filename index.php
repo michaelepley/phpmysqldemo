@@ -1,6 +1,6 @@
 <html>
  <head>
-  <title>Hello Jamie Jones</title>
+  <title>Hello Openshift User!</title>
   <style>
     table, th, td {
       border: 1px solid black;
@@ -51,7 +51,7 @@ if ($conn) {
   $visitstamp = date("D M j G:i:s T Y");
   $sql = "INSERT INTO visitors (containerip, visitstamp)
           VALUES ('$containerip', '$visitstamp')";
-
+O
   if (mysqli_query($conn, $sql)) {
     echo "New record created successfully <br/>";
   } else {
