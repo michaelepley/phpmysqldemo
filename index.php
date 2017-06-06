@@ -1,10 +1,6 @@
 <html>
  <head>
-<<<<<<< HEAD
-  <title>Hello Michael!</title>
-=======
   <title>Hello Openshift User!</title>
->>>>>>> branch 'master' of https://github.com/michaelepley/phpmysqldemo.git
   <style>
     table, th, td {
       border: 1px solid black;
