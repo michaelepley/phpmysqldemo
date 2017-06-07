@@ -33,7 +33,7 @@ $database = getenv("MYSQL_SERVICE_DATABASE");
 $username = getenv("MYSQL_SERVICE_USERNAME");
 $password = getenv("MYSQL_SERVICE_PASSWORD");
 
-$conn = mysqli_connect($host, $username, $password, $database, $porgitt);
+$conn = mysqli_connect($host, $username, $password, $database, $port);
 if ($conn) {
   echo "Database is available <br/>";
   $sql = "CREATE TABLE visitors (
