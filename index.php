@@ -60,7 +60,7 @@ if ($conn) {
   $sql = "SELECT id, containerip, visitstamp FROM visitors";
   $result = mysqli_query($conn, $sql);
   if (mysqli_num_rows($result) > 0) {
-    echo "<table><tr><th>Id</th><th>Container</th><th>Timestamp</th></tr>";
+    echo "<table bgcolor='#0000FF'><tr><th>Id</th><th>Container</th><th>Timestamp</th></tr>";
     while($row = mysqli_fetch_assoc($result)) {
         echo "<tr><td>" . $row["id"] . "</td><td>" . $row["containerip"] . "</td><td>" . $row["visitstamp"] . "</td></tr>";
     }
