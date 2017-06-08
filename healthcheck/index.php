@@ -1,4 +1,4 @@
 <?php
-http_response_code(503);
+http_response_code(200);
 ?>
 NOT_OK
